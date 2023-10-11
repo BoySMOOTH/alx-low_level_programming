@@ -12,4 +12,3 @@ int numLength(int num)
 	int length = 0;
 
 	if (!num)
-}
