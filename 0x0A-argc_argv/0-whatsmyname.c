@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - print the name of the program
- * @argc: Argument counter
- * @argv: Arugument strings
- * Return: Program name
+ * main - Print the name of the program
+ * @argc: Argument's counter.
+ * @argv: Argument's strings.
+ * Return: Program's name.
  */
 int main(int argc, char *argv[])
 {
