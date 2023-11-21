@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <lists.h>
+#include "lists.h"
 
 /**
  * Print_listint - Print elements of a singly linked list
@@ -9,17 +9,15 @@
  *
  */
 
-size_t print_listint(const listint_t *h);
+size_t print_listint(const listint_t *h)
 {
-	const listint_t *tp;
-	unsigned int cntr = 0;
+	size_t count = 0;
 
-	tp = h;
-	while (tp)
+	while (h !=NULL)
 	{
-		printf("%d\n", tp->n);
-		cntr++;
-		tp = tp->next;
+		printf("%i\n", h->n);
+		h = h->next;
+		count++;
 	}
-	return (cntr);
+	return (count);
 }
